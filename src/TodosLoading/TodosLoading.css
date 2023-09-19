@@ -1,0 +1,28 @@
+.loader-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Ajusta la altura según tus necesidades */
+  }
+  
+  .loader {
+    border: 4px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    border-top: 4px solid #3498db; /* Color del borde superior (puedes personalizarlo) */
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite; /* Nombre de la animación y duración */
+    margin-bottom: 10px; /* Espacio entre el icono y el texto */
+  }
+  
+  .loading-text {
+    font-size: 16px;
+    color: #333; /* Puedes personalizar el color del texto */
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
